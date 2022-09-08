@@ -1,11 +1,10 @@
 ﻿Console.WriteLine("Введите число");
 
-string number = Console.ReadLine();
-int num = Convert.ToInt32(number);
+int num = int.Parse(Console.ReadLine());
 
 if (num < -99) // Сделано, чтоб работало с трёхзначными отрицательными
 {
-    num = num * (-1); 
+    num = num * (-1);
 }
 if (num < 100)
 {
@@ -13,6 +12,5 @@ if (num < 100)
 }
 else
 {
-    Console.WriteLine
-    ("Третья цифра в числе - " + (num.ToString().ToCharArray()[2]));
+    Console.WriteLine("Третья цифра в числе - " + (num.ToString().ToCharArray()[2]));
 }

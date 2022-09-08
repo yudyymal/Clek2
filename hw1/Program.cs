@@ -1,7 +1,6 @@
 ﻿Console.WriteLine("Введите трёхзначное число");
 
-string number = Console.ReadLine();
-int num = Convert.ToInt32(number);
+int num = int.Parse(Console.ReadLine());
 
 if (num > 999 || num < 100)
 {
@@ -9,6 +8,5 @@ if (num > 999 || num < 100)
 }
 else
 {
-    Console.WriteLine
-    ("Вторая цифра в числе - " + (num.ToString().ToCharArray()[1]));
+    Console.WriteLine("Вторая цифра в числе - " + (num.ToString().ToCharArray()[1]));
 }
