@@ -3,7 +3,7 @@
 string number = Console.ReadLine();
 int num = Convert.ToInt32(number);
 
-if (num>999 || num<100)
+if (num > 999 || num < 100)
 {
     Console.WriteLine("Число не является трёхзначным или отрицательное");
 }
